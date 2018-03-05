@@ -33,7 +33,7 @@ public class LoginD extends HttpServlet {
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			
-	           Connection con = null;
+	           Connection con = null;   //Drivers added
 	           String conUrl = "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=Registration;integratedSecurity=true";
 	           con = DriverManager.getConnection(conUrl);
 	           
